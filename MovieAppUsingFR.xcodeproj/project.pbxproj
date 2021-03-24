@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D0D6DA0260BBD9C00A091E1 /* Movie+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D6D9F260BBD9C00A091E1 /* Movie+Extensions.swift */; };
 		8D873125260BB83700DFA2B3 /* MovieAppUsingFRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D873124260BB83700DFA2B3 /* MovieAppUsingFRApp.swift */; };
 		8D873127260BB83700DFA2B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D873126260BB83700DFA2B3 /* ContentView.swift */; };
 		8D873129260BB83800DFA2B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D873128260BB83800DFA2B3 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D0D6D9F260BBD9C00A091E1 /* Movie+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Extensions.swift"; sourceTree = "<group>"; };
 		8D873121260BB83700DFA2B3 /* MovieAppUsingFR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieAppUsingFR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D873124260BB83700DFA2B3 /* MovieAppUsingFRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppUsingFRApp.swift; sourceTree = "<group>"; };
 		8D873126260BB83700DFA2B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D0D6D9E260BBD8F00A091E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D0D6D9F260BBD9C00A091E1 /* Movie+Extensions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8D873118260BB83700DFA2B3 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		8D873123260BB83700DFA2B3 /* MovieAppUsingFR */ = {
 			isa = PBXGroup;
 			children = (
+				8D0D6D9E260BBD8F00A091E1 /* Models */,
 				8D873124260BB83700DFA2B3 /* MovieAppUsingFRApp.swift */,
 				8D873126260BB83700DFA2B3 /* ContentView.swift */,
 				8D873128260BB83800DFA2B3 /* Assets.xcassets */,
@@ -146,6 +157,7 @@
 			files = (
 				8D873139260BB89D00DFA2B3 /* MovieAppModel.xcdatamodeld in Sources */,
 				8D873135260BB87100DFA2B3 /* CoreDataManager.swift in Sources */,
+				8D0D6DA0260BBD9C00A091E1 /* Movie+Extensions.swift in Sources */,
 				8D873127260BB83700DFA2B3 /* ContentView.swift in Sources */,
 				8D873125260BB83700DFA2B3 /* MovieAppUsingFRApp.swift in Sources */,
 			);
