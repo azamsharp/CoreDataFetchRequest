@@ -8,14 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Environment(\.managedObjectContext) private var viewContext
+    
+    @FetchRequest(entity: Movie.entity(), sortDescriptors: [NSSortDescriptor(key: "title", ascending: true)])
+    var movies: FetchedResults<Movie>
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(movies, id: \.self) { movie in
+            Text(movie.title ?? "")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environment(\.managedObjectContext, CoreDataManager.shared.viewContext)
     }
 }
